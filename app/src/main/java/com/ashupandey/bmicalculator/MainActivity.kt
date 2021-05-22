@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         if(weightEditText.text.length!=0 && heightEditText.text.length!=0)
         {
             val bmi = (weight.toFloat() /(height.toFloat()*height.toFloat()))
-            bmiText.text= String.format("%.2f",bmi)
+            bmiText.text= String.format("%.3f",bmi)
 
             if(bmi<19)
             {
