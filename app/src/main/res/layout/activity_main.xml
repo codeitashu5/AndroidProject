@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/input_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+
+        >
+
+        <EditText
+            android:id="@+id/weight_edit_text"
+            style="@style/style_text_view"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/days_one"
+            android:hint="@string/weight_hint"
+            android:textAlignment="center" />
+
+        <EditText
+
+            android:id="@+id/height_edit_text"
+            style="@style/style_text_view"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/days_one"
+            android:hint="@string/height_hint"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button_calcuate"
+            style="@style/style_button"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/days_one"
+
+            android:onClick="calculateBmi"
+            android:text="@string/button_text"
+            tools:ignore="InefficientWeight" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/liner_layout_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_8"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:text="RESET"
+            android:fontFamily="@font/days_one"
+            android:background="@drawable/frame_for_edit_texts"
+            android:layout_marginTop="16dp"
+            android:onClick="reset"
+            android:visibility="visible"
+            android:textSize="@dimen/text_size_24" />
+
+
+        <TextView
+            android:id="@+id/bmi_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/days_one"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_24"
+            android:visibility="invisible"
+            tools:text="BMI OF PERSON"
+            tools:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/comment_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/days_one"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_24"
+            android:visibility="invisible"
+             />
+
+        <ImageView
+            android:id="@+id/image_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+
+            android:layout_marginRight="50dp"
+            android:contentDescription="@string/image_description"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/ic_healthy" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="style_text_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+        <item name="android:background">@drawable/frame_for_edit_texts</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:visibility">visible</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <style name="style_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/frame_for_edit_texts</item>
+        <item name="android:padding">@dimen/padding_8</item>
+        <item name="android:textSize">@dimen/text_size_24</item>
+        <item name="android:visibility">visible</item>
+    </style>
+
+</resources>
